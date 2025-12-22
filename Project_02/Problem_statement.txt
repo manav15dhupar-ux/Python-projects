@@ -1,0 +1,38 @@
+Project name: Indian General Store Bill Generator
+
+**Problem Statement: Krina Store Shopping Calculator**
+
+Develop a console-based shopping calculator for "Krina Store" (also referred to as "Manav General Store") that allows customers to input multiple purchase amounts interactively and computes the running total along with a final receipt. The program uses a loop to accept amounts until the user quits, validates numeric inputs, and displays itemized bills with grand total. [1]
+
+## Requirements
+- Display a welcome message: "======= Welcome To krina Store Calculator =======".
+- Initialize total (`add=0`) and empty list (`amt_list=[]`) to track amounts.
+- In a `while True` loop, prompt: "Enter the amount or press q to exit:".
+- Validate input: if 'q' or 'Q', break the loop; if numeric (allowing one decimal point), add to total, append to list, and show "Total so far {add}"; else, prompt "Enter a valid amount".
+- After exit, print receipt header "======MANAV GENERAL STORE======", list each amount as "Rs.{i}", and final "Total amount Rs.{add} , Thanks for coming 😁". [2]
+
+## Sample Run
+```
+======= Welcome To krina Store Calculator ========
+
+Enter the amount or press q to exit:
+50.5
+Total so far 50.5
+Enter the amount or press q to exit:
+30
+Total so far 80.5
+Enter the amount or press q to exit:
+q
+
+======MANAV GENERAL STORE======
+Rs.50.5
+Rs.30.0
+Total amount Rs.80.5 , Thanks for coming 😁
+```
+
+## Key Features
+- Continuous input with running total feedback.
+- Simple decimal validation using `replace('.', '', 1).isdigit()`.
+- Stores all valid amounts for final itemized display.
+Ideal for beginner Python practice on lists, loops, input validation, and string formatting.
+
