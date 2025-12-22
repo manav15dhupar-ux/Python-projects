@@ -1,0 +1,19 @@
+Project name: 'Expense Tracker'
+
+
+**Problem Statement: Personal Expense Tracker**
+
+Develop a console-based Expense Tracker application in Python that allows users to record, view, and monitor their daily expenses categorized by type. The system maintains a list of expense entries, each containing date, category, description, and amount, while providing total spending summaries [3].
+
+## Requirements
+- Implement a menu-driven interface with options: 1.Add Expense, 2.View All Expenses, 3.iew Total Spending, 4.Exit.
+- For adding expenses, collect date, category (e.g., Food, Travel, Makeup, Books), description, and amount as float, storing each as a dictionary in `expensesList` [1].
+- Handle empty list cases gracefully when viewing expenses [4].
+
+## Expected Behavior
+The program runs in an infinite loop until exit, displaying numbered expenses with details when viewing, and computes total spending by summing amounts [2].  
+Invalid choices prompt retry without crashing. Sample output for added expense: "DONE bro. Expense is added successfully" followed by menu refresh [5].  
+Supports multiple entries with sequential numbering for easy tracking.
+
+
+
