@@ -1,0 +1,47 @@
+Project name:Student Result Management System
+
+**Problem Statement
+
+Design and implement a menu-driven Python program to manage and process student academic records for a class.
+
+The program should perform the following tasks:
+	1.	Accept the number of students from the user.
+	2.	For each student, input:
+	•	Student name
+	•	Total marks
+	•	Average marks
+	3.	Store student records using an appropriate data structure.
+	4.	Display a menu repeatedly with the following options:
+	•	Pass/Fail Status
+Display whether each student has passed or failed based on their average marks.
+	•	Display Student Records
+Show all student details in a tabular format.
+	•	Search Student Record
+Allow the user to search for a student by name and display their marks and average.
+	•	Merit List
+Display the names of students who qualify for the merit list based on a predefined average marks criterion.
+	•	Exit
+Terminate the program.
+	5.	Continue executing until the user chooses to exit.
+
+⸻
+
+##Constraints & Conditions
+	•	Student records must be stored using tuples.
+	•	The program should use loops and conditional statements.
+	•	Searching should be performed using student names.
+	•	The program should be user-friendly and menu-driven.
+
+⸻
+
+##Sample Evaluation Criteria (Optional for Practicals)
+	•	Average ≥ 32 → Pass
+	•	Average ≥ 75 → Merit List
+
+⸻
+
+## Learning Outcomes
+	•	Understanding of tuples and lists
+	•	Menu-driven programming
+	•	Use of loops, conditions, and indexing
+	•	Basic data handling in Python
