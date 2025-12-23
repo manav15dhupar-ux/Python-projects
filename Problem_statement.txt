@@ -1,0 +1,43 @@
+Project name: Phone Directory 
+
+**Problem Statement: Phone Directory Management System
+
+Design and implement a menu-driven Python program to create and manage a Phone Directory using a dictionary.
+
+##The program should perform the following tasks:
+	1.	Display a welcome message for the phone directory.
+	2.	Accept the number of initial contact entries from the user.
+	3.	For each contact, input:
+	•	Name
+	•	Phone number
+	4.	Store contact details in a dictionary, where:
+	•	The name acts as the key.
+	•	The phone number acts as the value.
+	5.	Prevent duplicate entries by ensuring:
+	•	No two contacts have the same name.
+	•	No two contacts have the same phone number.
+	6.	Validate phone numbers to ensure that they contain only digits.
+	7.	Display a menu repeatedly with the following options:
+	•	Contact List – Display all stored contact names.
+	•	Find Contact – Search and display a contact’s phone number using the name.
+	•	Add Contact – Add a new contact with duplicate and validity checks.
+	•	Discard Contact – Remove a contact from the directory.
+	•	Exit – Terminate the program.
+	8.	Continue execution until the user chooses to exit.
+
+⸻
+
+##Constraints & Conditions
+	•	Use a dictionary for storing contact information.
+	•	Use loops and conditional statements to control program flow.
+	•	Prevent insertion of duplicate names and phone numbers.
+	•	The program should be user-friendly and menu-driven.
+
+⸻
+
+##Learning Outcomes
+	•	Understanding of dictionary operations
+	•	Menu-driven program design
+	•	Input validation techniques
+	•	Duplicate prevention logic
+	•	Practical application of loops and flow control
