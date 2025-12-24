@@ -1,0 +1,3 @@
+Addition of new logic "found" in main1.py.
+
+I recently learned about this new logic from chatgpt while asking to correct my code , I apperciate and encourage  AI learning.All this was not taught to me by any youtube tutorial or professor.
