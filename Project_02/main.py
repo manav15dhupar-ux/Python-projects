@@ -7,7 +7,6 @@ while True:
     if (num.lower()=='q'):
         break
     if(num.replace('.','',1).isdigit()):
-        print("Enter a valid amount")
         total=float(num)
         add=add+total
         print(f"Total so far {add}")
