@@ -1,0 +1,38 @@
+Project name: Employee Database Management System
+
+**Design and implement a menu-driven Python program to manage an Employee Database using a list of dictionaries.
+
+The program should perform the following operations:
+	1.	Accept the number of employees from the user.
+	2.	Store employee details such as:
+	•	Employee Name
+	•	Basic Salary
+	•	House Rent Allowance
+	•	Conveyance Allowance
+	•	Total Salary (calculated automatically)
+	3.	Use a dictionary to store details of a single employee and a list to store multiple employee records.
+	4.	Display a menu repeatedly with the following options:
+	•	Add Employee – Enter and store details of employees.
+	•	View All Employees – Display all stored employee records.
+	•	Search Employee – Search for an employee by name and display details.
+	•	Change Employee Details – Update salary components of an employee and recalculate total salary.
+	•	Exit – Terminate the program.
+	5.	Ensure proper input handling and case-insensitive searching of employee names.
+	6.	Continue execution until the user selects the exit option.
+
+⸻
+
+##Constraints & Conditions
+	•	Employee records must be stored using a list of dictionaries.
+	•	Searching and updating should be done by employee name.
+	•	Total salary must be recalculated after any update.
+	•	The program should be menu-driven and user-friendly.
+
+⸻
+
+##Learning Outcomes
+	•	Understanding of lists and dictionaries
+	•	Menu-driven program design
+	•	Searching and updating data structures
+	•	Logical control using loops and conditions
+	•	Real-world data management concepts
