@@ -1,0 +1,44 @@
+Project name:Snake–Water–Gun Game 
+
+**Design and implement a menu-driven Python program that simulates the classic Snake–Water–Gun game between a user and the computer.
+
+The program should:
+	1.	Display a menu with the following options:
+	•	Snake
+	•	Water
+	•	Gun
+	•	Exit
+	2.	Accept the user’s choice through numeric input.
+	3.	Generate the computer’s choice randomly using Python’s random module.
+	4.	Compare the user’s choice with the computer’s choice and determine the result based on the following rules:
+	•	Snake drinks Water → Snake wins
+	•	Water drowns Gun → Water wins
+	•	Gun kills Snake → Gun wins
+	•	Same choices result in a tie
+	5.	Display both the user’s and computer’s choices in a readable format.
+	6.	Use a function to handle repeated display logic for user and computer selections.
+	7.	Continue the game until the user selects the Exit option.
+
+⸻
+
+##Objectives
+	•	To understand the use of loops, conditional statements, and functions
+	•	To practice random number generation
+	•	To implement menu-driven programs
+	•	To improve code readability and modularity
+
+⸻
+
+##Concepts Used
+	•	while loop
+	•	if–elif–else conditions
+	•	Functions
+	•	Dictionaries
+	•	random.randint()
+	•	Input validation
+
+⸻
+
+##Outcome
+
+The program successfully allows the user to play Snake–Water–Gun against the computer until they choose to exit, displaying correct results for each round.
