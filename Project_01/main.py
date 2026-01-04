@@ -1,6 +1,29 @@
 # Expense Tracker Project 
 
 expensesList = [] #list of expenses in form of dictionary 
+
+def load_expense():
+    try:
+        with open("expense.txt","r") as f:
+            for line in f:
+                data=line.strip().split(",")
+                expense={
+                    "date": data[0],
+                    "category": data[1],
+                    "description": data[2],
+                    "amount": float(data[3])
+                }
+                expensesList.append(expense)
+    except FileNotFoundError:
+        pass  # file doesn't exist first time
+
+# ---------- SAVE EXPENSE ----------
+def save_expense(expense):
+    with open("expense.txt", "a") as f:
+        f.write(f"{expense['date']},{expense['category']},{expense['description']},{expense['amount']}\n")
+
+load_expense()
+
 print(" \nWelcome to Expense Tracker : \n")
 
 while True:
@@ -27,6 +50,7 @@ while True:
         }
 
         expensesList.append(expense)
+        save_expense(expense)
         print(" \n Expense is added succesfully \n")
 
 # 2. VIEW ALL EXPENSES 

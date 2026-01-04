@@ -1,0 +1,2 @@
+4 jan 2026,food,cake,500.0
+4 jan 2026,food,chinies bheel,150.0
