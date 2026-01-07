@@ -1,13 +1,43 @@
-n = int(input("Enter number of students: "))
-tup = ()
-names = []
+def load_data():
+    global tup,names
+    try:
+        with open("data.txt","r") as f:
+            for line in f:
+                data = line.strip().split("|")
+                name = data[0]
+                t_marks = int(data[1])
+                avg = float(data[2])
+
+                tup += ((name,t_marks,avg),)
+                names.append(name)
+    except FileNotFoundError:
+        pass
+
+
+def save_data(name, t_marks, avg):
+    with open("data.txt", "a") as f:
+        f.write(f"{name}|{t_marks}|{avg}\n")
+
+
+tup=()
+names=[]
+load_data()
+
+n=int(input("Enter number of students:"))
 
 for i in range(n):
-    name = input("Name: ")
+    name=input("Name:")
+
+    if name in names:
+        print("Student already exists")
+        continue
+
+    t_marks=int(input("Enter Total Marks:"))
+    avg=t_marks/3
+
+    tup+=((name,t_marks,avg),)
     names.append(name)
-    t_marks = int(input("Enter Total Marks: "))
-    avg = t_marks / 3   # assuming 3 subjects
-    tup += ((name, t_marks, avg),)
+    save_data(name,t_marks,avg)
 
 while True:
     print("\n===== MENU =====")
@@ -29,16 +59,19 @@ while True:
     elif ch == 2:
         print("Name\tTotal Marks\tAverage")
         for i in tup:
-            print(i[0], "\t", i[1], "\t", round(i[2], 2))
+            print(i[0], "\t", i[1], "\t\t", round(i[2], 2))
 
     elif ch == 3:
         sr = input("Enter name to search: ")
-        if sr in names:
-            pos = names.index(sr)
-            print("Name:", tup[pos][0])
-            print("Total Marks:", tup[pos][1])
-            print("Average:", tup[pos][2])
-        else:
+        found = False
+        for i in tup:
+            if i[0].lower() == sr.lower():
+                print("Name:", i[0])
+                print("Total Marks:", i[1])
+                print("Average:", i[2])
+                found = True
+                break
+        if not found:
             print("Name not found")
 
     elif ch == 4:
@@ -49,5 +82,6 @@ while True:
 
     elif ch == 5:
         break
+
     else:
         print("Invalid Choice")
