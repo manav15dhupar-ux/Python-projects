@@ -1,3 +1,5 @@
+#------Load Previous Data------
+
 def load_data():
     global tup,names
     try:
@@ -13,15 +15,17 @@ def load_data():
     except FileNotFoundError:
         pass
 
+#------Save New Data------
+
 
 def save_data(name, t_marks, avg):
     with open("data.txt", "a") as f:
         f.write(f"{name}|{t_marks}|{avg}\n")
 
-
+#------Enter New Data------
 tup=()
 names=[]
-load_data()
+load_data() # Fetching Previous Data
 
 n=int(input("Enter number of students:"))
 
@@ -37,7 +41,9 @@ for i in range(n):
 
     tup+=((name,t_marks,avg),)
     names.append(name)
-    save_data(name,t_marks,avg)
+    save_data(name,t_marks,avg) # Saving New Data
+
+#------Main Menu------
 
 while True:
     print("\n===== MENU =====")
