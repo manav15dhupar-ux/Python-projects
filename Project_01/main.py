@@ -53,7 +53,7 @@ while True:
         save_expense(expense)
         print(" \n Expense is added succesfully \n")
 
-# 2. VIEW ALL EXPENSES 
+# VIEW ALL EXPENSES 
     elif(choice == 2):
         if( len(expensesList)==0 ):
             print("No Expenses Added.")
@@ -64,7 +64,7 @@ while True:
                 print(f"\nExpense Number {count}:\n DATE:{eachKharcha["date"]}\nCATEGORY:{eachKharcha["category"]}\nDESCRIPTION: {eachKharcha["description"]}\nAMOUNT: {eachKharcha["amount"]} \n")
                 count= count+1
 
-# 3. View TOtal Spending 
+# View Total Spending 
     elif(choice == 3):
         total= 0
         for eachKrcha in expensesList:
@@ -72,7 +72,7 @@ while True:
 
         print(f"\nTOTAL EXPENSE: {total}\n")
 
-#4. EXIT 
+# EXIT 
     elif(choice == 4):
         print("\nThank You For Using Our Expense Tracker\n")
         break
