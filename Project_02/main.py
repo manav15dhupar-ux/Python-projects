@@ -1,14 +1,22 @@
+#------save New Data------
+
 def save_data(data,date,name):
     with open("sales.txt","a") as f:
         f.write(f"Rs.{str(data)},{str(date)},{str(name)}\n")
+
+#---Store Date------
 
 def get_date():
     date_pur=input("Enter The Date(DD/MM/YY):")
     return date_pur
 
+#------Store Name------
+
 def costomer_details():
     name=input("Enter Name:")
     return name
+
+#------Main Menu------
 
 print("======= Welcome To krina Store Calculator =======")
 add=0
@@ -29,9 +37,11 @@ while True:
     else:
         print("Enter a valid amount:")
 
+#------Final Output------
+
 print("\n======MANAV GENERAL STORE======\n")
 for i in amt_list:
     print(f"Rs.{i}")
 print(f"Total amount Rs.{add} , Thanks for coming 😁 Visit Again 🙏")
-save_data(add,today_date,custom)
+save_data(add,today_date,custom) # save all changes
 
