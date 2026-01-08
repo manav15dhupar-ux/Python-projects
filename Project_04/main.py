@@ -1,3 +1,6 @@
+def load_data():
+    try
+
 print("====== WELCOME TO PHONE DIRECTORY ======")
 
 phone = {}
